@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Charm:wght@700&family=Quantico:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-image: linear-gradient(to right, purple, black, #00008b);
+    width: 20vw;
+    height: 100vh;
+    transition: 2s ease-in;
+}
+
+.sidebar nav {
+    padding: 200px 80px;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar li {
+    list-style: none;
+    padding: 50px 0px;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Quantico';
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.sidebar li a:hover {
+    color: antiquewhite;
+}
+
+.main {
+    width: 80vw;
+}
+
+.info {
+    margin-top: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.hello {
+    font-size: 25px;
+    font-family: 'Baloo Bhaijaan 2';
+    font-weight: bolder;
+}
+
+.name {
+    font-size: 20px;
+    font-family: 'Charm';
+}
+
+.pic img {
+    width: 50%;
+    border-radius: 100%;
+    border: 10px solid midnightblue;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0);
+}
+
+.hamburger {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: orangered;
+    width: 45px;
+    height: 4px;
+    margin: 6px 0;
+    transition: 1s ease;
+}
+
+.cross .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.cross .bar2 {
+    opacity: 0;
+}
+
+.cross .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#imgFluid {
+    width: 40%;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introContainer h1 {
+    font-size: 25px;
+    font-family: 'Baloo Bhaijaan 2';
+    font-weight: bolder;
+    letter-spacing: 0.4px;
+}
+
+.introContainer p {
+    font-size: 20px;
+    font-family: 'Charm';
+    letter-spacing: 0.3px;
+}
+
+.members {
+    margin-top: 40px;
+}
+
+.members h1 {
+    font-size: 25px;
+    font-family: 'Baloo Bhaijaan 2';
+    font-weight: bolder;
+    letter-spacing: 0.4px;
+}
+
+.memberContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#memberInfo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Charm';
+}
+
+.memberImg img {
+    width: 100px;
+    border-radius: 100%;
+    border: 4px solid purple;
+}
+
+.memberName {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 1075px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+    .intro {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .info {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+}
